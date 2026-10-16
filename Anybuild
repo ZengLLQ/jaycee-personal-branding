@@ -25,6 +25,7 @@ build = struct(
     packages = [],
     mounts = [],
     env = {},
+    output = "out",
 )
 
 nodestatic_serve(config, build)
