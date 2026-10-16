@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #f2eee3;
+  color: #0f1117;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #8e8cd8;
+  color: #0f1117;
+}
+
+/* Anchor jumps shouldn't hide headings under the fixed nav */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+@layer components {
+  /* Micro-labels: tiny, uppercase, wide tracking */
+  .label {
+    @apply text-[0.68rem] font-semibold uppercase tracking-label;
+  }
+
+  /* 90-degree rotated typography */
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  /* Marquee: compositor-only transform animation, paused on hover */
+  .marquee-track:hover .marquee-group {
+    animation-play-state: paused;
+  }
+}
+
+/* Keep motion on, but much gentler, for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-group {
+    animation-duration: 160s !important;
+  }
+  .pulse-dot {
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
