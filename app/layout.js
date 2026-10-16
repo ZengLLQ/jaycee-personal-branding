@@ -8,9 +8,14 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "JAYCEE 曾令强 — Back-end Developer & Penetration Tester",
+  title: "JAYCEE 曾令强",
   description:
     "Portfolio of Jaycee (曾令强): freelance back-end developer and penetration tester exploring AI & machine learning.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
