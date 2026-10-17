@@ -41,7 +41,7 @@ const SCHOOLS = [
   {
     years: "2010 — 2012",
     name: "Whiz Kids Play School",
-    place: null,
+    place: "Surabaya",
     level: "Play School",
   },
 ];

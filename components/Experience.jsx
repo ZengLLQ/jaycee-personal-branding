@@ -4,17 +4,17 @@ const JOBS = [
   {
     role: "Smart Contract Back-End Engineer",
     company: "Phantom",
-    type: null,
+    type: "Contract",
     period: "Jun 2026 — Present",
-    location: null,
+    location: "Remote",
     current: true,
   },
   {
     role: "Penetration Tester",
     company: "MoonPay",
-    type: null,
+    type: "Contract",
     period: "Dec 2025 — Present",
-    location: "Surabaya, East Java, Indonesia · Remote",
+    location: "Remote",
     current: true,
   },
   {
@@ -22,7 +22,7 @@ const JOBS = [
     company: "Web3 Foundation",
     type: "Contract",
     period: "Mar 2023 — Present",
-    location: "Surabaya, East Java, Indonesia · Remote",
+    location: "Remote",
     current: true,
   },
   {
@@ -30,7 +30,7 @@ const JOBS = [
     company: "Serotonin",
     type: "Contract",
     period: "Aug 2025 — Jan 2026",
-    location: null,
+    location: "Remote",
     current: false,
   },
   {
@@ -38,7 +38,7 @@ const JOBS = [
     company: "WalletConnect",
     type: "Freelance",
     period: "Mar 2024 — Mar 2025",
-    location: null,
+    location: "Remote",
     current: false,
   },
   {
@@ -46,7 +46,7 @@ const JOBS = [
     company: "Zurich Insurance",
     type: "Freelance",
     period: "Sep 2022 — May 2023",
-    location: null,
+    location: "Remote",
     current: false,
   },
 ];
