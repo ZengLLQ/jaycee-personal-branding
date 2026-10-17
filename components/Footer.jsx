@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const CONTACTS = [
   { icon: Mail, label: "Email", value: "veneratesman@gmail.com", href: "mailto:veneratesman@gmail.com" },
-  { icon: Phone, label: "Phone", value: "+62 822-3255-4674", href: "tel:+6282232554674" },
+  { icon: Phone, label: "Phone", value: "+62 822-3255-4674", href: "https://wa.me/6282232554674", external: true },
   { icon: Github, label: "GitHub", value: "github.com/ZengLLQ", href: "https://github.com/ZengLLQ", external: true },
 ];
 

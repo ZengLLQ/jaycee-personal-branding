@@ -55,7 +55,9 @@ export default function Nav() {
           ))}
         </nav>
         <a
-          href="mailto:veneratesman@gmail.com"
+          href="https://wa.me/6282232554674"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`label border px-4 py-2 transition-colors ${
             scrolled
               ? "border-cream/60 hover:border-vermilion hover:bg-vermilion hover:text-ink"
