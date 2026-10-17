@@ -30,9 +30,9 @@ const CURIOUS = [
 ];
 
 const FACTS = [
-  { k: "Born", v: "Surabaya", sub: "27th February 2008", emoji: "🎂" },
-  { k: "Hobby", v: "K-drama & C-drama", sub: "Watching Korean & Chinese dramas", emoji: "📺" },
-  { k: "Sport", v: "Badminton & Padel", sub: "Racket sports", emoji: "🏸" },
+  { k: "Born", v: "Surabaya", sub: "27th February 2008", icon: "/emojis/cake.svg", alt: "Birthday cake" },
+  { k: "Hobby", v: "K-drama & C-drama", sub: "Watching Korean & Chinese dramas", icon: "/emojis/tv.svg", alt: "Television" },
+  { k: "Sport", v: "Badminton & Padel", sub: "Racket sports", icon: "/emojis/badminton.svg", alt: "Badminton" },
 ];
 
 export default function About() {
@@ -73,9 +73,12 @@ export default function About() {
                     key={f.k}
                     className="flex items-start gap-5 border-b border-white/10 p-6 last:border-0 md:p-7"
                   >
-                    <span aria-hidden className="text-3xl leading-none">
-                      {f.emoji}
-                    </span>
+                    <img
+                      src={f.icon}
+                      alt={f.alt}
+                      aria-hidden="true"
+                      className="mt-0.5 h-8 w-8 shrink-0 select-none md:h-9 md:w-9"
+                    />
                     <div className="min-w-0">
                       <dt className="label text-vermilion">{f.k}</dt>
                       <dd className="mt-2 text-2xl font-black leading-tight tracking-tighter md:text-3xl">
