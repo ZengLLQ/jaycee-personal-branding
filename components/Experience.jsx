@@ -26,7 +26,7 @@ const JOBS = [
     current: true,
   },
   {
-    role: "Smart Contract Backend Engineer",
+    role: "Smart Contract Back-End Engineer",
     company: "Serotonin",
     type: "Contract",
     period: "Aug 2025 — Jan 2026",
